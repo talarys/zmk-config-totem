@@ -15,16 +15,4 @@ config ZMK_SPLIT
 config ZMK_USB
     default y
 
-config ZMK_BLE
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-config BT_MAX_CONN
-    default 3
-
-config BT_MAX_PAIRED
-    default 3
-
 endif
