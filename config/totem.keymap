@@ -92,5 +92,14 @@
                                     &trans           &trans          &trans    &trans         &kp K_CANCEL       &trans
             >;
         };
+
+        Fn {
+            bindings = <
+        &kp F12            &kp F7            &kp F8         &kp F9              &trans    &kp C_PP    &kp C_PREV        &kp C_VOLUME_UP    &kp C_NEXT         &trans
+        &hml LEFT_GUI F11  &hml LEFT_ALT F4  &hml LCTRL F5  &hml LEFT_SHIFT F6  &trans    &trans      &kp LC(LG(LEFT))  &kp C_VOLUME_DOWN  &kp LC(LG(RIGHT))  &trans
+&trans  &kp F10            &kp F1            &kp F2         &kp F3              &trans    &kp C_MUTE  &trans            &kp LC(LG(D))      &trans             &trans  &trans
+                                             &trans         &trans              &trans    &trans      &trans            &trans
+            >;
+        };
     };
 };
