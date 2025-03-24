@@ -59,9 +59,164 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
+
+        lpar_lt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_LT";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rpar_gt: rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR_GT";
+            bindings = <&kp RPAR>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        At {
+            bindings = <&kp AT>;
+            key-positions = <1 11>;
+        };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+
+        Mouse {
+            bindings = <&tog 5>;
+            key-positions = <2 3>;
+        };
+
+        Hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+        };
+
+        Dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        Percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <11 22>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <23 12>;
+        };
+
+        Eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <24 13>;
+        };
+
+        Tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <25 14>;
+        };
+
+        Copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <22 23>;
+        };
+
+        Paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <23 24>;
+        };
+
+        Cut {
+            bindings = <&kp K_CUT>;
+            key-positions = <24 22>;
+        };
+
+        Caret {
+            bindings = <&kp CARET>;
+            key-positions = <15 5>;
+        };
+
+        Plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 16>;
+        };
+
+        Asterisk {
+            bindings = <&kp ASTRK>;
+            key-positions = <17 7>;
+        };
+
+        Amps {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <8 18>;
+        };
+
+        Under {
+            bindings = <&kp UNDER>;
+            key-positions = <26 15>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 27>;
+        };
+
+        Slash {
+            bindings = <&kp SLASH>;
+            key-positions = <17 28>;
+        };
+
+        Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 29>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        Delete {
+            bindings = <&kp DEL>;
+            key-positions = <8 7>;
+        };
+
+        LPar {
+            bindings = <&lpar_lt>;
+            key-positions = <16 17>;
+        };
+
+        RPar {
+            bindings = <&rpar_gt>;
+            key-positions = <17 18>;
+        };
+
+        LBrack {
+            bindings = <&kp LBKT>;
+            key-positions = <27 28>;
+        };
+
+        RBrack {
+            bindings = <&kp RBKT>;
+            key-positions = <29 28>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -69,10 +224,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P
-       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H    &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON
-&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp SLASH            &kp DEL
-                                 &kp ESCAPE    &kp TAB        &kp SPACE    &kp RET  &kp BSPC      &kp DEL
+       &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y    &kp U            &kp I         &kp O        &kp P
+       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H    &hmr RSHFT J     &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON
+&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N    &kp M            &kp COMMA     &kp DOT      &kp SLASH            &kp DEL
+                                 &lt 3 ESC     &lt 4 TAB      &kp SPACE    &kp RET  &lt 5 BACKSPACE  &lt 3 DEL
             >;
         };
 
