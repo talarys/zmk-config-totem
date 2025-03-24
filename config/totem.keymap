@@ -83,5 +83,14 @@
                          &trans  &kp LALT  &kp SPACE    &trans  &trans  &trans
             >;
         };
+
+        Nav {
+            bindings = <
+        &trans        &trans        &kp LS(LA(TAB))  &kp LA(TAB)     &trans    &kp PAGE_UP    &mt LC(BSPC) BSPC  &mt LC(HOME) UP   &mt LC(DEL) DEL  &trans
+        &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL        &sk LEFT_SHIFT  &trans    &kp PAGE_DOWN  &mt HOME LEFT      &mt LC(END) DOWN  &mt END RIGHT    &kp ENTER
+&trans  &trans        &trans        &trans           &trans          &trans    &kp PAGE_DOWN  &kp TAB            &trans            &trans           &trans     &trans
+                                    &trans           &trans          &trans    &trans         &kp K_CANCEL       &trans
+            >;
+        };
     };
 };
