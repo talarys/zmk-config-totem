@@ -101,5 +101,14 @@
                                              &trans         &trans              &trans    &trans      &trans            &trans
             >;
         };
+
+        Num {
+            bindings = <
+        &kp N0            &kp N7            &kp N8         &kp N9          &trans    &trans  &trans          &trans     &trans        &trans
+        &hml LEFT_GUI N0  &hml LEFT_ALT N4  &hml LCTRL N5  &hml LSHIFT N6  &trans    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&trans  &kp N0            &kp N1            &kp N2         &kp N3          &trans    &trans  &trans          &trans     &trans        &trans        &trans
+                                            &trans         &trans          &trans    &trans  &trans          &trans
+            >;
+        };
     };
 };
