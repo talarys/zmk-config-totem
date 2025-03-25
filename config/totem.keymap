@@ -301,8 +301,6 @@
 &to 0  &kp LCTRL  &kp Z  &kp X   &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &kp LALT  &kp SPACE    &trans  &trans  &trans
             >;
-
-            label = "gaming";
         };
 
         Nav {
@@ -312,8 +310,6 @@
 &trans  &trans    &trans    &trans           &trans       &trans    &kp PG_DN    &kp TAB            &trans            &trans           &trans     &trans
                             &trans           &trans       &trans    &trans       &kp K_CANCEL       &trans
             >;
-
-            label = "nav";
         };
 
         Fn {
@@ -323,8 +319,6 @@
 &trans  &kp F10        &kp F1        &kp F2         &kp F3          &trans    &kp C_MUTE  &trans            &kp LC(LG(D))      &trans             &trans  &trans
                                      &trans         &trans          &trans    &trans      &trans            &trans
             >;
-
-            label = "fn";
         };
 
         Num {
@@ -334,8 +328,6 @@
 &trans  &kp N0        &kp N1        &kp N2         &kp N3          &trans    &trans  &trans      &trans     &trans    &trans    &trans
                                     &trans         &trans          &trans    &trans  &trans      &trans
             >;
-
-            label = "num";
         };
 
         Mouse {
@@ -345,8 +337,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mkp MB1        &mkp MB2        &mkp MB3         &trans           &trans
                         &trans  &trans  &trans    &trans          &trans          &trans
             >;
-
-            label = "mouse";
         };
     };
 };
