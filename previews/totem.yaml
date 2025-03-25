@@ -37,8 +37,8 @@ layers:
   - {t: TAB, h: Num}
   - SPACE
   - RET
-  - {t: BACKSPACE, h: Mouse}
-  - {t: DEL, h: Nav}
+  - {t: BACKSPACE, h: Nav}
+  - {t: DEL, h: Mouse}
   Gaming:
   - TAB
   - Q
@@ -72,51 +72,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
+  - {t: ESC, h: Fn}
+  - {t: LEFT ALT, h: Num}
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+Alt+TAB
-  - Alt+TAB
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - {t: BSPC, h: Ctl+BSPC}
-  - {t: UP, h: Ctl+HOME}
-  - {t: DEL, h: Ctl+DEL}
-  - {t: ▽, type: trans}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHIFT, h: sticky}
-  - {t: ▽, type: trans}
-  - PG DN
-  - {t: LEFT, h: HOME}
-  - {t: DOWN, h: Ctl+END}
-  - {t: RIGHT, h: END}
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG DN
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - CANCEL
-  - {type: held}
   Fn:
   - F12
   - F7
@@ -195,6 +156,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+Alt+TAB
+  - Alt+TAB
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - {t: BSPC, h: Ctl+BSPC}
+  - {t: UP, h: Ctl+HOME}
+  - {t: DEL, h: Ctl+DEL}
+  - {t: ▽, type: trans}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LSHIFT, h: sticky}
+  - {t: ▽, type: trans}
+  - PG DN
+  - {t: LEFT, h: HOME}
+  - {t: DOWN, h: Ctl+END}
+  - {t: RIGHT, h: END}
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG DN
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -232,8 +232,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [1, 11]
   k: '@'
