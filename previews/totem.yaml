@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RSHFT}
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: '''', h: RGUI}
   - {t: Gaming, h: toggle}
   - Z
   - X
@@ -29,16 +29,16 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - /
-  - DEL
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - {t: Base, h: toggle}
   - {t: ESC, h: Fn}
   - {t: TAB, h: Num}
   - SPACE
   - RET
   - {t: BACKSPACE, h: Mouse}
-  - {t: DEL, h: Fn}
+  - {t: DEL, h: Nav}
   Gaming:
   - TAB
   - Q
@@ -116,7 +116,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CANCEL
-  - {t: ▽, type: trans}
+  - {type: held}
   Fn:
   - F12
   - F7
@@ -243,7 +243,7 @@ combos:
   l: [Base]
 - p: [2, 3]
   k: {t: Mouse, h: toggle}
-  l: [Base]
+  l: [Base, Mouse]
 - p: [2, 12]
   k: '#'
   l: [Base]

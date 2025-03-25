@@ -77,6 +77,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        comma_semic: comma_semic {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMIC";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        que_ex: que_ex {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUE_EX";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -97,7 +124,7 @@
         Mouse {
             bindings = <&tog 5>;
             key-positions = <2 3>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         Hash {
@@ -252,9 +279,9 @@
             display-name = "Base";
             bindings = <
        &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y    &kp U            &kp I         &kp O        &kp P
-       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H    &hmr RSHFT J     &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON
-&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N    &kp M            &kp COMMA     &kp DOT      &kp SLASH            &kp DEL
-                                 &lt 3 ESC     &lt 4 TAB      &kp SPACE    &kp RET  &lt 5 BACKSPACE  &lt 3 DEL
+       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H    &hmr RSHFT J     &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
+&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N    &kp M            &comma_semic  &dot_colon   &que_ex                 &to 0
+                                 &lt 3 ESC     &lt 4 TAB      &kp SPACE    &kp RET  &lt 5 BACKSPACE  &lt 2 DEL
             >;
         };
 
